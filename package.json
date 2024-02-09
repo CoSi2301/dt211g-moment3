@@ -1,0 +1,16 @@
+{
+  "name": "dt211g-moment3",
+  "version": "1.0.0",
+  "description": "moment3",
+  "source": "src/index.html",
+  "author": "CoSi2301",
+  "license": "ISC",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.11.0",
+    "parcel": "^2.11.0"
+  }
+}

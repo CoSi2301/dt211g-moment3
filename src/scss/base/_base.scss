@@ -1,0 +1,4 @@
+@use "../utilities/variables" as *;
+body {
+  font-size: $base-font-size;
+}

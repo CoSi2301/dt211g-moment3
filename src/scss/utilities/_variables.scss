@@ -1,0 +1,17 @@
+$base-font-size: calc(15px + 0.390625vw);
+
+$min-320: 320px;
+
+$max-900: 900px;
+$max-1024: 1024px;
+$max-1200: 1200px;
+$max-1440: 1440px;
+
+$spacing: calc(8px + 1.5625vw);
+$sm-spacing: calc(calc(8px + 1.5625vw) * 0.5);
+
+$xs-padding: clamp(0.25rem, 0.5vw, 0.5rem);
+$sm-padding: clamp(0.5rem, 1vw, 1rem);
+$m-padding: clamp(1rem, 2vw, 2rem);
+$lg-padding: clamp(1.5rem, 3vw, 3rem);
+$xl-padding: clamp(2rem, 4vw, 4rem);

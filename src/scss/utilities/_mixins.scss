@@ -1,0 +1,25 @@
+@use "../utilities/variables" as *;
+
+@mixin center-wrapper-900 {
+  width: clamp($min-320, 100%, $max-900);
+  margin: 0 auto;
+  padding: 0;
+}
+
+@mixin center-wrapper-1024 {
+  width: clamp($min-320, 100%, $max-1024);
+  margin: 0 auto;
+  padding: 0;
+}
+
+@mixin center-wrapper-1200 {
+  width: clamp($min-320, 100%, $max-1200);
+  margin: 0 auto;
+  padding: 0;
+}
+
+@mixin center-wrapper-1440 {
+  width: clamp($min-320, 100%, $max-1440);
+  margin: 0 auto;
+  padding: 0;
+}
