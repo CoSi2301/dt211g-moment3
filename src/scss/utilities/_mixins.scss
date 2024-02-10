@@ -1,6 +1,7 @@
 @use "../utilities/variables" as *;
 
 @mixin body-background-fixed-cover {
+  min-width: $min-320;
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -37,4 +38,20 @@
   width: clamp($min-320, 100%, $max-1440);
   margin: 0 auto;
   padding: 0;
+}
+
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == mobile {
+    @media (max-width: $breakpoint-mobile) {
+      @content;
+    }
+  } @else if $breakpoint == tablet {
+    @media (max-width: $breakpoint-tablet) {
+      @content;
+    }
+  } @else if $breakpoint == desktop {
+    @media (min-width: $breakpoint-desktop) {
+      @content;
+    }
+  }
 }

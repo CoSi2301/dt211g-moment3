@@ -12,6 +12,8 @@ $footer-font-size: calc(calc(15px + 0.390625vw) * 0.8);
 $navbar-link-size: calc(calc(15px + 0.390625vw) * 1.2);
 $small-text-size: calc(calc(15px + 0.390625vw) * 0.8);
 
+$h1-text-size: calc(calc(15px + 0.390625vw) * 3);
+
 /*--------------------------------------------------------------------------------------------------
 Färger
 ------------------------------------------------------------------------------------------ Färger */
@@ -19,14 +21,14 @@ $light-body-background-color: hsl(212, 56%, 50%);
 $dark-body-background-color: hsl(218, 100%, 2%);
 $light-main-background-color: hsl(50, 21%, 95%);
 $dark-main-background-color: hsl(206, 42%, 22%);
-$light-primary-color: hsl(210, 100%, 50%);
-$dark-primary-color: hsl(300, 100%, 50%);
+$light-primary-color: hsl(218, 100%, 2%);
+$dark-primary-color: hsl(50, 21%, 95%);
 
 /*--------------------------------------------------------------------------------------------------
 Mått
 -------------------------------------------------------------------------------------------- Mått */
 $navbar-height: 3rem;
-$hero-height: 366px;
+$hero-height: 23rem;
 
 $min-320: 320px;
 
@@ -34,6 +36,10 @@ $max-900: 900px;
 $max-1024: 1024px;
 $max-1200: 1200px;
 $max-1440: 1440px;
+
+$breakpoint-mobile: 480px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1200px;
 
 $spacing: calc(8px + 1.5625vw);
 $sm-spacing: calc(calc(8px + 1.5625vw) * 0.5);

@@ -7,7 +7,7 @@
       }
 
       .b, .c {
-        fill: #f4f3ee;
+        fill: hsl(50, 21%, 95%);
         stroke-width: 0px;
       }
     </style>

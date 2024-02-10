@@ -1,0 +1,9 @@
+@use "../utilities/variables" as *;
+
+#theme-toggler {
+  margin-right: 0.05rem;
+  border: 1px solid hsl(0, 0%, 97%);
+  background-color: hsl(0, 0%, 100%);
+  border-radius: $xs-padding;
+  padding: $xs-padding $sm-padding;
+}

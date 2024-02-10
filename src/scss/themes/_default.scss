@@ -1,3 +1,36 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
 .montserrat-logo {
   margin-left: -2px;
+}
+
+.main-content {
+  transition: background-color $transition-speed ease-in-out;
+}
+
+.main-content h1 {
+  @include center-wrapper-1200;
+  margin-bottom: $m-padding;
+}
+
+.col-wrap {
+  @include center-wrapper-1200;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 1rem;
+
+  .left-col,
+  .right-col {
+    border-radius: 1rem;
+    background-color: hsl(0, 0%, 100%);
+    width: 100%;
+    padding: $m-padding;
+    height: fit-content;
+
+    ul {
+      padding: $m-padding;
+    }
+  }
 }

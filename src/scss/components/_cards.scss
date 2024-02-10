@@ -1,0 +1,20 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.cards-container {
+  @include center-wrapper-1200;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: $sm-padding;
+
+  @include respond-to(mobile) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  background: hsl(0, 0%, 100%);
+  padding: $sm-padding;
+  border-radius: 0.5rem;
+  margin: 0;
+}

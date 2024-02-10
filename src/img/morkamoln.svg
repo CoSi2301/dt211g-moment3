@@ -3,7 +3,7 @@
   <defs>
     <style>
       .b, .c {
-        fill: #203a4e;
+        fill: hsl(206, 42%, 22%);
         stroke-width: 0px;
       }
 
