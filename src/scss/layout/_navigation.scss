@@ -1,0 +1,24 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.navbar-container {
+  @include center-wrapper-1200;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    list-style: none;
+  }
+  li a {
+    color: #cccccc;
+    padding: $sm-padding;
+    &:hover {
+      color: #ffffff;
+      background-color: black;
+    }
+  }
+}

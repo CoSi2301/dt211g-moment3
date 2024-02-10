@@ -1,0 +1,25 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.footer-container {
+  @include center-wrapper-1200;
+  padding: $m-padding;
+  text-align: center;
+
+  .quick-links a {
+    font-family: $bebas-font-stack;
+    margin: 0 $xs-padding;
+  }
+
+  .social-links {
+    margin: $sm-padding 0;
+
+    span {
+      margin: 0 $xs-padding;
+    }
+  }
+  p {
+    font-family: $ibmplexmono-font-stack;
+    font-size: $footer-font-size;
+  }
+}

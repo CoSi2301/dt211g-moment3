@@ -1,0 +1,26 @@
+@use "../utilities/variables" as *;
+
+.dark-theme {
+  background-color: $dark-body-background-color;
+  background-image: url("../img/nite-time-big.avif");
+  color: $dark-primary-color;
+}
+
+body.dark-theme #logotype {
+  filter: brightness(0) saturate(100%) invert(99%) sepia(1%) saturate(1329%)
+    hue-rotate(168deg) brightness(98%) contrast(96%);
+}
+
+body.dark-theme .main-content {
+  background-color: $dark-main-background-color;
+}
+
+body.dark-theme .div-clouds-border {
+  background-image: url("../img/morkamoln.svg");
+  transition: background-image $transition-speed ease-in-out;
+}
+
+body.dark-theme .div-clouds-border-down {
+  background-image: url("../img/morkamoln_under.svg");
+  transition: background-image $transition-speed ease-in-out;
+}

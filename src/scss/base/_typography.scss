@@ -1,0 +1,33 @@
+@use "../utilities/variables" as *;
+
+/*--------------------------------------------------------------------------------------------------
+LOGO
+-------------------------------------------------------------------------------------------- LOGO */
+.bebas-neue-logo,
+.small-text-adjust,
+.navbar-list {
+  font-family: $bebas-font-stack;
+  letter-spacing: 1px;
+}
+
+.montserrat-logo {
+  font-family: $montserrat-font-stack;
+  letter-spacing: -0.5px;
+}
+
+.small-text-adjust {
+  font-size: $small-text-size;
+  letter-spacing: -1.3px;
+}
+
+.div-logo-text {
+  line-height: 0.8;
+}
+
+/*--------------------------------------------------------------------------------------------------
+FOOTER
+------------------------------------------------------------------------------------------ FOOTER */
+.quick-links a,
+.navbar-container a {
+  text-decoration: none;
+}

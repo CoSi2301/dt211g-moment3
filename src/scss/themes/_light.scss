@@ -1,0 +1,19 @@
+@use "../utilities/variables" as *;
+
+.light-theme {
+  background-color: $light-body-background-color;
+  background-image: url("../img/day-time-big.avif");
+  color: $light-primary-color;
+}
+
+body.light-theme .main-content {
+  background-color: $light-main-background-color;
+}
+
+body.light-theme .div-clouds-border {
+  background-image: url("../img/ljusamoln.svg");
+}
+
+body.light-theme .div-clouds-border-down {
+  background-image: url("../img/ljusamoln_under.svg");
+}

@@ -1,4 +1,8 @@
 @use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
 body {
+  @include body-background-fixed-cover;
+  font-family: $ubuntu-font-stack;
   font-size: $base-font-size;
 }
