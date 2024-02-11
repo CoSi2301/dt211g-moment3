@@ -11,6 +11,7 @@ body.dark-theme #logotype {
     hue-rotate(168deg) brightness(98%) contrast(96%);
 }
 
+body.dark-theme .navbar-container,
 body.dark-theme .main-content {
   background-color: $dark-main-background-color;
 }
@@ -23,4 +24,33 @@ body.dark-theme .div-clouds-border {
 body.dark-theme .div-clouds-border-down {
   background-image: url("../img/morkamoln_under.svg");
   transition: background-image $transition-speed ease-in-out;
+}
+
+body.dark-theme .navbar-container ul li a {
+  color: $light-main-background-color;
+  &:hover,
+  .active {
+    color: $accent-color;
+    background-color: hsla(0, 0%, 0%, 0.648);
+  }
+  .active {
+    cursor: default;
+  }
+}
+
+body.dark-theme .col-wrap {
+  color: $dark-body-background-color;
+  .left-col,
+  .right-col {
+    background-color: $light-main-background-color;
+  }
+}
+
+body.dark-theme .card {
+  background-color: $dark-primary-color;
+  color: $dark-body-background-color;
+}
+
+body.dark-theme footer a:hover {
+  color: lighten($footer-link-color, 40%);
 }

@@ -8,7 +8,6 @@
   align-items: center;
 
   .logo {
-    margin: $m-padding;
     width: 100%;
     max-width: 150px;
     height: 100%;
@@ -17,5 +16,13 @@
     background-size: cover;
     background-position: center;
     transition: background-image $transition-speed ease-in-out;
+  }
+  .logo-link {
+    margin: $m-padding;
+    display: block;
+    width: 150px;
+    max-width: 150px;
+    height: 150px;
+    max-height: 150px;
   }
 }

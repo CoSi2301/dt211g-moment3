@@ -7,15 +7,20 @@
   text-align: center;
 
   .quick-links a {
+    color: $footer-link-color;
     font-family: $bebas-font-stack;
     margin: 0 $xs-padding;
+    transition: color $transition-speed ease;
   }
 
   .social-links {
     margin: $sm-padding 0;
-
     span {
       margin: 0 $xs-padding;
+    }
+    a {
+      color: $footer-link-color;
+      transition: color $transition-speed ease;
     }
   }
   p {

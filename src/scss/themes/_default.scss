@@ -7,11 +7,17 @@
 
 .main-content {
   transition: background-color $transition-speed ease-in-out;
+  .info-text {
+    @include center-wrapper-1200;
+    margin-bottom: $m-padding;
+    padding: $sm-padding;
+  }
 }
 
 .main-content h1 {
   @include center-wrapper-1200;
-  margin-bottom: $m-padding;
+  margin-bottom: $sm-padding;
+  padding-left: $sm-padding;
 }
 
 .col-wrap {
@@ -20,6 +26,7 @@
   flex-direction: row;
   justify-content: space-evenly;
   gap: 1rem;
+  padding: $sm-padding;
 
   .left-col,
   .right-col {
@@ -31,6 +38,10 @@
 
     ul {
       padding: $m-padding;
+
+      li {
+        margin-bottom: $xs-padding;
+      }
     }
   }
 }

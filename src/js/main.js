@@ -19,7 +19,7 @@ window.onload = () => {
 
 document.addEventListener("scroll", function () {
   let scrolledY = window.scrollY;
-  let positionY = -scrolledY * 0.2;
+  let positionY = -scrolledY * 0.1;
 
   document.body.style.backgroundPosition = "center " + positionY + "px";
 });
@@ -69,6 +69,27 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function updateButtonIcon(theme) {
-    themeToggler.textContent = theme === "dark-theme" ? "🌞" : "🌚";
+    themeToggler.textContent = theme === "dark-theme" ? "☀️" : "🌑";
+  }
+});
+
+// Select the button using its ID
+const button = document.getElementById("theme-toggler");
+
+// Function to change the emoji on mouse enter
+button.addEventListener("mouseenter", function () {
+  if (this.textContent === "☀️") {
+    this.textContent = "🌞";
+  } else if (this.textContent === "🌑") {
+    this.textContent = "🌚";
+  }
+});
+
+// Function to revert the emoji on mouse leave
+button.addEventListener("mouseleave", function () {
+  if (this.textContent === "🌞") {
+    this.textContent = "☀️";
+  } else if (this.textContent === "🌚") {
+    this.textContent = "🌑";
   }
 });

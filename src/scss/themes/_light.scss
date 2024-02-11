@@ -18,3 +18,23 @@ body.light-theme .div-clouds-border {
 body.light-theme .div-clouds-border-down {
   background-image: url("../img/ljusamoln_under.svg");
 }
+
+body.light-theme .navbar-container ul li a {
+  color: $dark-body-background-color;
+  &:hover,
+  .active {
+    color: $accent-color;
+    background-color: hsla(0, 0%, 0%, 0.648);
+  }
+  .active {
+    cursor: default;
+  }
+}
+
+body.light-theme .card {
+  background-color: hsl(0, 0%, 100%);
+}
+
+body.light-theme a:hover {
+  color: darken($footer-link-color, 30%);
+}
