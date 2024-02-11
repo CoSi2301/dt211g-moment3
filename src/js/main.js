@@ -93,3 +93,17 @@ button.addEventListener("mouseleave", function () {
     this.textContent = "🌑";
   }
 });
+
+function toggleMenu() {
+  const navbar = document.querySelector(".navbar-links");
+  const hamburgerIcon = document.querySelector(".hamburger-menu i");
+
+  navbar.classList.toggle("is-active");
+
+  // Byter ikon beroende på om menyn är öppen eller inte
+  if (navbar.classList.contains("is-active")) {
+    hamburgerIcon.className = "fa fa-times"; // Stäng-ikon
+  } else {
+    hamburgerIcon.className = "fa fa-bars"; // Hamburger-ikon
+  }
+}

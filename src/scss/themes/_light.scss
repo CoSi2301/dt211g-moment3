@@ -21,20 +21,22 @@ body.light-theme .div-clouds-border-down {
 
 body.light-theme .navbar-container ul li a {
   color: $dark-body-background-color;
-  &:hover,
-  .active {
+  &:hover:not(.active) {
     color: $accent-color;
     background-color: hsla(0, 0%, 0%, 0.648);
   }
-  .active {
-    cursor: default;
-  }
+}
+
+body.light-theme .navbar-container ul li .active {
+  color: $accent-color;
+  background-color: hsla(0, 0%, 0%, 0.648);
+  cursor: default;
 }
 
 body.light-theme .card {
   background-color: hsl(0, 0%, 100%);
 }
 
-body.light-theme a:hover {
+body.light-theme footer a:hover {
   color: darken($footer-link-color, 30%);
 }

@@ -28,6 +28,10 @@
   gap: 1rem;
   padding: $sm-padding;
 
+  @include respond-to(tablet) {
+    flex-direction: column;
+  }
+
   .left-col,
   .right-col {
     border-radius: 1rem;

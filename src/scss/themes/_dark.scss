@@ -28,14 +28,16 @@ body.dark-theme .div-clouds-border-down {
 
 body.dark-theme .navbar-container ul li a {
   color: $light-main-background-color;
-  &:hover,
-  .active {
+  &:hover:not(.active) {
     color: $accent-color;
     background-color: hsla(0, 0%, 0%, 0.648);
   }
-  .active {
-    cursor: default;
-  }
+}
+
+body.dark-theme .navbar-container ul li .active {
+  color: $accent-color;
+  background-color: hsla(0, 0%, 0%, 0.648);
+  cursor: default;
 }
 
 body.dark-theme .col-wrap {

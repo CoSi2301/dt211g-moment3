@@ -9,6 +9,10 @@
   border-radius: $sm-padding;
   padding: $xs-padding $xs-padding $xs-padding 0.7rem;
   margin: $m-padding 0;
+  @include respond-to(tablet) {
+    padding: 0.2rem;
+    justify-content: center;
+  }
   ul {
     display: flex;
     justify-content: space-between;
@@ -16,9 +20,15 @@
     padding: 0;
     list-style: none;
     gap: $xs-padding;
+    @include respond-to(tablet) {
+      gap: 0;
+    }
   }
   li a {
     padding: $sm-padding;
+    @include respond-to(tablet) {
+      padding: $xs-padding;
+    }
   }
   .div-logo-text {
     display: flex;
@@ -27,6 +37,9 @@
     gap: 0;
     align-content: center;
     justify-self: center;
+    @include respond-to(tablet) {
+      display: none;
+    }
   }
   .yellow {
     border-bottom: 3px solid $accent-color;
