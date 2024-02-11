@@ -6,11 +6,14 @@
   padding: $m-padding;
   text-align: center;
 
-  .quick-links,
-  .social-links {
+  .quick-links {
     width: fit-content;
     margin: 0 auto;
     padding: 0.2rem;
+  }
+
+  .social-links {
+    @extend .quick-links;
   }
 
   .quick-links a {
