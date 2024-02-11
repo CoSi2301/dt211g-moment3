@@ -19,7 +19,7 @@ window.onload = () => {
 
 document.addEventListener("scroll", function () {
   let scrolledY = window.scrollY;
-  let positionY = -scrolledY * 0.1;
+  let positionY = -scrolledY * 0.13;
 
   document.body.style.backgroundPosition = "center " + positionY + "px";
 });
@@ -73,10 +73,8 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-// Select the button using its ID
 const button = document.getElementById("theme-toggler");
 
-// Function to change the emoji on mouse enter
 button.addEventListener("mouseenter", function () {
   if (this.textContent === "☀️") {
     this.textContent = "🌞";
@@ -85,7 +83,6 @@ button.addEventListener("mouseenter", function () {
   }
 });
 
-// Function to revert the emoji on mouse leave
 button.addEventListener("mouseleave", function () {
   if (this.textContent === "🌞") {
     this.textContent = "☀️";
@@ -93,17 +90,3 @@ button.addEventListener("mouseleave", function () {
     this.textContent = "🌑";
   }
 });
-
-function toggleMenu() {
-  const navbar = document.querySelector(".navbar-links");
-  const hamburgerIcon = document.querySelector(".hamburger-menu i");
-
-  navbar.classList.toggle("is-active");
-
-  // Byter ikon beroende på om menyn är öppen eller inte
-  if (navbar.classList.contains("is-active")) {
-    hamburgerIcon.className = "fa fa-times"; // Stäng-ikon
-  } else {
-    hamburgerIcon.className = "fa fa-bars"; // Hamburger-ikon
-  }
-}

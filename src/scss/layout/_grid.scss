@@ -22,6 +22,9 @@
   height: 100px;
   max-height: 100px;
   margin: 0 0 5rem 0;
+  @include respond-to(mobile) {
+    margin: 0;
+  }
   padding: 0;
   background-position: bottom;
   background-size: cover;

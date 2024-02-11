@@ -6,10 +6,12 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: $sm-padding;
-  padding: $sm-padding;
+  padding: $sm-padding $sm-padding $lg-padding $sm-padding;
+  margin-top: 1rem;
 
   @include respond-to(mobile) {
     grid-template-columns: 1fr;
+    padding: $xs-padding;
   }
 }
 
@@ -17,8 +19,12 @@
   padding: $sm-padding;
   border-radius: 0.5rem;
   margin: 0;
+  height: fit-content;
 
   h2 {
     text-align: center;
+  }
+  p {
+    margin-top: 1rem;
   }
 }

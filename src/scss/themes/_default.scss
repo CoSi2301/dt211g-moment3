@@ -27,6 +27,7 @@
   justify-content: space-evenly;
   gap: 1rem;
   padding: $sm-padding;
+  margin-bottom: 2rem;
 
   @include respond-to(tablet) {
     flex-direction: column;

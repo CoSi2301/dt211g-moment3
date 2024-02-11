@@ -56,3 +56,8 @@ body.dark-theme .card {
 body.dark-theme footer a:hover {
   color: lighten($footer-link-color, 40%);
 }
+
+body.dark-theme .quick-links,
+body.dark-theme .social-links {
+  background-color: hsla(48, 20%, 95%, 0.648);
+}

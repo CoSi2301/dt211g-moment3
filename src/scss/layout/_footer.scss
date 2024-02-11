@@ -6,6 +6,13 @@
   padding: $m-padding;
   text-align: center;
 
+  .quick-links,
+  .social-links {
+    width: fit-content;
+    margin: 0 auto;
+    padding: 0.2rem;
+  }
+
   .quick-links a {
     color: $footer-link-color;
     font-family: $bebas-font-stack;
@@ -14,7 +21,7 @@
   }
 
   .social-links {
-    margin: $sm-padding 0;
+    margin: $sm-padding auto;
     span {
       margin: 0 $xs-padding;
     }
@@ -24,7 +31,9 @@
     }
   }
   p {
+    width: fit-content;
     font-family: $ibmplexmono-font-stack;
     font-size: $footer-font-size;
+    margin: 0 auto;
   }
 }
