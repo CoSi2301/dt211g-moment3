@@ -37,6 +37,10 @@ body.light-theme .card {
   background-color: hsl(0, 0%, 100%);
 }
 
+body.light-theme .sass-card {
+  @extend .card;
+}
+
 body.light-theme footer a:hover {
   color: lighten($footer-link-color, 40%);
 }

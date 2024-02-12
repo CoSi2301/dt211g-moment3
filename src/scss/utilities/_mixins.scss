@@ -9,6 +9,10 @@
     background-color $transition-speed ease, color $transition-speed ease;
 }
 
+@mixin full-width-card {
+  grid-template-columns: 1fr;
+}
+
 @mixin body-flex-col-wrap {
   width: 100%;
   height: 100%;

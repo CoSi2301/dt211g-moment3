@@ -29,3 +29,12 @@
     margin-top: 1rem;
   }
 }
+
+.cards-sass-container {
+  @extend .cards-container;
+  @include full-width-card;
+}
+
+.sass-card {
+  @extend .card;
+}

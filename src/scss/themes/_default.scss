@@ -58,3 +58,32 @@
     }
   }
 }
+
+.main-content ol {
+  @include center-wrapper-1200;
+  @include respond-to(mobile) {
+    @include center-wrapper-sml;
+  }
+  li {
+    margin-left: 3rem;
+    padding: $m-padding;
+    @include respond-to(mobile) {
+      margin-left: 1rem;
+      padding: $sm-padding;
+    }
+  }
+}
+
+.sass .info-text {
+  @include respond-to(mobile) {
+    margin-bottom: 1rem;
+  }
+}
+
+.sass ol {
+  margin-bottom: 1rem;
+}
+
+.sass h1 {
+  margin: 1.3rem auto;
+}

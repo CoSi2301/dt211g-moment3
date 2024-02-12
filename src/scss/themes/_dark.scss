@@ -53,6 +53,10 @@ body.dark-theme .card {
   color: $dark-body-background-color;
 }
 
+body.dark-theme .sass-card {
+  @extend .card;
+}
+
 body.dark-theme footer a:hover {
   color: darken($footer-link-color, 30%);
 }

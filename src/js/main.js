@@ -19,7 +19,7 @@ window.onload = () => {
 
 document.addEventListener("scroll", function () {
   let scrolledY = window.scrollY;
-  let positionY = -scrolledY * 0.13;
+  let positionY = -scrolledY * 0.1;
 
   document.body.style.backgroundPosition = "center " + positionY + "px";
 });
