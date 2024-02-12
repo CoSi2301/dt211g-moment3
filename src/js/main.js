@@ -73,6 +73,10 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
+// ------------------------------------------------------------------------------------------------
+// Hover på temaknapp -----------------------------------------------------------------------------
+// ----------------------------------------------------------------------------- Hover på temaknapp
+
 const button = document.getElementById("theme-toggler");
 
 button.addEventListener("mouseenter", function () {

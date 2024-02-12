@@ -9,6 +9,11 @@
   min-height: 100px;
   height: 100px;
   max-height: 100px;
+  @include respond-to(mobile) {
+    min-height: 50px;
+    height: 50px;
+    max-height: 50px;
+  }
   margin: 0;
   padding: 0;
   background-position: top;
@@ -21,6 +26,11 @@
   min-height: 100px;
   height: 100px;
   max-height: 100px;
+  @include respond-to(mobile) {
+    min-height: 50px;
+    height: 50px;
+    max-height: 50px;
+  }
   margin: 0 0 5rem 0;
   @include respond-to(mobile) {
     margin: 0;

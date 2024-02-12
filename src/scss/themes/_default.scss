@@ -7,10 +7,14 @@
 
 .main-content {
   transition: background-color $transition-speed ease-in-out;
+  padding: $m-padding;
   .info-text {
     @include center-wrapper-1200;
     margin-bottom: $m-padding;
     padding: $sm-padding;
+    @include respond-to(mobile) {
+      @include center-wrapper-sml;
+    }
   }
 }
 
@@ -18,6 +22,9 @@
   @include center-wrapper-1200;
   margin-bottom: $sm-padding;
   padding-left: $sm-padding;
+  @include respond-to(mobile) {
+    @include center-wrapper-sml;
+  }
 }
 
 .col-wrap {
@@ -31,6 +38,7 @@
 
   @include respond-to(tablet) {
     flex-direction: column;
+    max-width: 100%;
   }
 
   .left-col,

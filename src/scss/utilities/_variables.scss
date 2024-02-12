@@ -13,6 +13,7 @@ $navbar-link-size: calc(calc(15px + 0.390625vw) * 1.2);
 $small-text-size: calc(calc(15px + 0.390625vw) * 0.8);
 
 $h1-text-size: calc(calc(15px + 0.390625vw) * 3);
+$h1-tablet-size: calc(calc(15px + 0.390625vw) * 1.8);
 
 /*--------------------------------------------------------------------------------------------------
 Färger
@@ -32,6 +33,8 @@ $footer-link-color: hsl(43, 100%, 51%);
 Mått
 -------------------------------------------------------------------------------------------- Mått */
 
+$hero-height-sm: 15rem;
+$hero-height-m: 20rem;
 $hero-height: 23rem;
 
 $min-320: 320px;

@@ -54,7 +54,7 @@ body.dark-theme .card {
 }
 
 body.dark-theme footer a:hover {
-  color: lighten($footer-link-color, 40%);
+  color: darken($footer-link-color, 30%);
 }
 
 body.dark-theme .quick-links,

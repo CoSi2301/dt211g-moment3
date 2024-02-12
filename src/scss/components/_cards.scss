@@ -10,6 +10,7 @@
   margin-top: 1rem;
 
   @include respond-to(mobile) {
+    @include center-wrapper-sml;
     grid-template-columns: 1fr;
     padding: $xs-padding;
   }

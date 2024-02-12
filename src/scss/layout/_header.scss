@@ -1,7 +1,14 @@
 @use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
 
 .hero-section {
   height: $hero-height;
+  @include respond-to(tablet) {
+    height: $hero-height-m;
+  }
+  @include respond-to(mobile) {
+    height: $hero-height-sm;
+  }
   display: flex;
   flex-direction: column;
   justify-content: center;

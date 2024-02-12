@@ -38,7 +38,7 @@ body.light-theme .card {
 }
 
 body.light-theme footer a:hover {
-  color: darken($footer-link-color, 30%);
+  color: lighten($footer-link-color, 40%);
 }
 
 body.light-theme footer p {

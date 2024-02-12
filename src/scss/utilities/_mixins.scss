@@ -16,6 +16,18 @@
   flex-direction: column;
 }
 
+@mixin center-wrapper-sml {
+  width: clamp(200px, 100%, $min-320);
+  margin: 0 auto;
+  padding: 0;
+}
+
+@mixin center-wrapper-320 {
+  width: $min-320;
+  margin: 0 auto;
+  padding: 0;
+}
+
 @mixin center-wrapper-900 {
   width: clamp($min-320, 100%, $max-900);
   margin: 0 auto;

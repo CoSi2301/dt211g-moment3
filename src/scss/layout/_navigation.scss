@@ -10,6 +10,7 @@
   padding: $xs-padding $xs-padding $xs-padding 0.7rem;
   margin: $m-padding 0;
   @include respond-to(tablet) {
+    @include center-wrapper-320;
     padding: 0.2rem;
     justify-content: center;
   }
