@@ -1,0 +1,35 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.hero-section {
+  height: $hero-height;
+  @include respond-to(tablet) {
+    height: $hero-height-m;
+  }
+  @include respond-to(mobile) {
+    height: $hero-height-sm;
+  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .logo {
+    width: 100%;
+    max-width: 150px;
+    height: 100%;
+    max-height: 150px;
+    background-image: url("../img/cs_day.svg");
+    background-size: cover;
+    background-position: center;
+    transition: background-image $transition-speed ease-in-out;
+  }
+  .logo-link {
+    margin: $m-padding;
+    display: block;
+    width: 150px;
+    max-width: 150px;
+    height: 150px;
+    max-height: 150px;
+  }
+}

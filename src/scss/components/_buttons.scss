@@ -1,0 +1,13 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+#theme-toggler {
+  background: none;
+  border: none;
+  padding: $xs-padding;
+  @include respond-to(tablet) {
+    padding: 0.01;
+  }
+  cursor: pointer;
+  transition: transform $transition-speed ease-in-out;
+}

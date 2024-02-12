@@ -1,0 +1,67 @@
+@use "../utilities/variables" as *;
+
+.dark-theme {
+  background-color: $dark-body-background-color;
+  background-image: url("../img/nite-time-big.avif");
+  color: $dark-primary-color;
+}
+
+body.dark-theme #logotype {
+  filter: brightness(0) saturate(100%) invert(99%) sepia(1%) saturate(1329%)
+    hue-rotate(168deg) brightness(98%) contrast(96%);
+}
+
+body.dark-theme .navbar-container,
+body.dark-theme .main-content {
+  background-color: $dark-main-background-color;
+}
+
+body.dark-theme .div-clouds-border {
+  background-image: url("../img/morkamoln.svg");
+  transition: background-image $transition-speed ease-in-out;
+}
+
+body.dark-theme .div-clouds-border-down {
+  background-image: url("../img/morkamoln_under.svg");
+  transition: background-image $transition-speed ease-in-out;
+}
+
+body.dark-theme .navbar-container ul li a {
+  color: $light-main-background-color;
+  &:hover:not(.active) {
+    color: $accent-color;
+    background-color: hsla(0, 0%, 0%, 0.648);
+  }
+}
+
+body.dark-theme .navbar-container ul li .active {
+  color: $accent-color;
+  background-color: hsla(0, 0%, 0%, 0.648);
+  cursor: default;
+}
+
+body.dark-theme .col-wrap {
+  color: $dark-body-background-color;
+  .left-col,
+  .right-col {
+    background-color: $light-main-background-color;
+  }
+}
+
+body.dark-theme .card {
+  background-color: $dark-primary-color;
+  color: $dark-body-background-color;
+}
+
+body.dark-theme .sass-card {
+  @extend .card;
+}
+
+body.dark-theme footer a:hover {
+  color: darken($footer-link-color, 30%);
+}
+
+body.dark-theme .quick-links,
+body.dark-theme .social-links {
+  background-color: hsla(48, 20%, 95%, 0.648);
+}

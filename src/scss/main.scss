@@ -1,10 +1,10 @@
 @charset "UTF-8";
 
 // 1. Configuration
+@use "utilities/reset";
 @use "utilities/variables";
 @use "utilities/functions";
 @use "utilities/mixins";
-@use "utilities/reset";
 
 // 2. Vendors
 @use "vendors/vendors";
@@ -22,6 +22,7 @@
 
 // 5. Components
 @use "components/buttons";
+@use "components/cards";
 
 // 6. Page-specific
 @use "pages/home";

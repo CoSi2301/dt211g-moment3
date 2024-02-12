@@ -1,0 +1,89 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.montserrat-logo {
+  margin-left: -2px;
+}
+
+.main-content {
+  transition: background-color $transition-speed ease-in-out;
+  padding: $m-padding;
+  .info-text {
+    @include center-wrapper-1200;
+    margin-bottom: $m-padding;
+    padding: $sm-padding;
+    @include respond-to(mobile) {
+      @include center-wrapper-sml;
+    }
+  }
+}
+
+.main-content h1 {
+  @include center-wrapper-1200;
+  margin-bottom: $sm-padding;
+  padding-left: $sm-padding;
+  @include respond-to(mobile) {
+    @include center-wrapper-sml;
+  }
+}
+
+.col-wrap {
+  @include center-wrapper-1200;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 1rem;
+  padding: $sm-padding;
+  margin-bottom: 2rem;
+
+  @include respond-to(tablet) {
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  .left-col,
+  .right-col {
+    border-radius: 1rem;
+    background-color: hsl(0, 0%, 100%);
+    width: 100%;
+    padding: $m-padding;
+    height: fit-content;
+
+    ul {
+      padding: $m-padding;
+
+      li {
+        margin-bottom: $xs-padding;
+      }
+    }
+  }
+}
+
+.main-content ol {
+  @include center-wrapper-1200;
+  @include respond-to(mobile) {
+    @include center-wrapper-sml;
+  }
+  li {
+    margin-left: 3rem;
+    padding: $m-padding;
+    @include respond-to(mobile) {
+      margin-left: 1rem;
+      padding: $sm-padding;
+    }
+  }
+}
+
+.sass .info-text {
+  @include respond-to(mobile) {
+    margin-bottom: 1rem;
+  }
+}
+
+.sass ol {
+  margin-bottom: 1rem;
+}
+
+.sass h1 {
+  margin: 1.3rem auto;
+}

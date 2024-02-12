@@ -1,0 +1,40 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.cards-container {
+  @include center-wrapper-1200;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: $sm-padding;
+  padding: $sm-padding $sm-padding $lg-padding $sm-padding;
+  margin-top: 1rem;
+
+  @include respond-to(mobile) {
+    @include center-wrapper-sml;
+    grid-template-columns: 1fr;
+    padding: $xs-padding;
+  }
+}
+
+.card {
+  padding: $sm-padding;
+  border-radius: 0.5rem;
+  margin: 0;
+  height: fit-content;
+
+  h2 {
+    text-align: center;
+  }
+  p {
+    margin-top: 1rem;
+  }
+}
+
+.cards-sass-container {
+  @extend .cards-container;
+  @include full-width-card;
+}
+
+.sass-card {
+  @extend .card;
+}

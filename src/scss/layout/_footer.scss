@@ -1,0 +1,42 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.footer-container {
+  @include center-wrapper-1200;
+  padding: $m-padding;
+  text-align: center;
+
+  .quick-links {
+    width: fit-content;
+    margin: 0 auto;
+    padding: 0.2rem;
+  }
+
+  .social-links {
+    @extend .quick-links;
+  }
+
+  .quick-links a {
+    color: $footer-link-color;
+    font-family: $bebas-font-stack;
+    margin: 0 $xs-padding;
+    transition: color $transition-speed ease;
+  }
+
+  .social-links {
+    margin: $sm-padding auto;
+    span {
+      margin: 0 $xs-padding;
+    }
+    a {
+      color: $footer-link-color;
+      transition: color $transition-speed ease;
+    }
+  }
+  p {
+    width: fit-content;
+    font-family: $ibmplexmono-font-stack;
+    font-size: $footer-font-size;
+    margin: 0 auto;
+  }
+}

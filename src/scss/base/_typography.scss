@@ -1,0 +1,61 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+/*--------------------------------------------------------------------------------------------------
+LOGO
+-------------------------------------------------------------------------------------------- LOGO */
+.bebas-neue-logo,
+.small-text-adjust,
+.navbar-list {
+  font-family: $bebas-font-stack;
+  letter-spacing: 1px;
+}
+
+.bebas-neue-logo {
+  line-height: 0.4;
+}
+
+.montserrat-logo {
+  font-family: $montserrat-font-stack;
+  letter-spacing: -0.5px;
+}
+
+.small-text-adjust {
+  font-size: $small-text-size;
+  letter-spacing: -1.3px;
+  line-height: 0.8;
+}
+
+.div-logo-text {
+  padding-top: 6px;
+  line-height: 1;
+  cursor: default;
+}
+
+/*--------------------------------------------------------------------------------------------------
+NAVBAR
+------------------------------------------------------------------------------------------ NAVBAR */
+.navbar-container li a {
+  font-family: $bebas-font-stack;
+  font-size: $navbar-link-size;
+  display: block;
+  line-height: 1;
+}
+
+/*--------------------------------------------------------------------------------------------------
+MAIN
+-------------------------------------------------------------------------------------------- MAIN */
+h1 {
+  font-size: $h1-text-size;
+  @include respond-to(tablet) {
+    font-size: $h1-tablet-size;
+  }
+}
+
+/*--------------------------------------------------------------------------------------------------
+FOOTER
+------------------------------------------------------------------------------------------ FOOTER */
+.quick-links a,
+.navbar-container a {
+  text-decoration: none;
+}

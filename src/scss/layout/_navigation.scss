@@ -1,0 +1,48 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.navbar-container {
+  @include center-wrapper-900;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: $sm-padding;
+  padding: $xs-padding $xs-padding $xs-padding 0.7rem;
+  margin: $m-padding 0;
+  @include respond-to(tablet) {
+    @include center-wrapper-320;
+    padding: 0.2rem;
+    justify-content: center;
+  }
+  ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    list-style: none;
+    gap: $xs-padding;
+    @include respond-to(tablet) {
+      gap: 0;
+    }
+  }
+  li a {
+    padding: $sm-padding;
+    @include respond-to(tablet) {
+      padding: $xs-padding;
+    }
+  }
+  .div-logo-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0;
+    align-content: center;
+    justify-self: center;
+    @include respond-to(tablet) {
+      display: none;
+    }
+  }
+  .yellow {
+    border-bottom: 3px solid $accent-color;
+  }
+}

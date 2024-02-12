@@ -1,5 +1,37 @@
 @use "../utilities/variables" as *;
 
+@mixin body-background-fixed-cover {
+  min-width: $min-320;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  transition: background-image $transition-speed ease-in-out,
+    background-color $transition-speed ease, color $transition-speed ease;
+}
+
+@mixin full-width-card {
+  grid-template-columns: 1fr;
+}
+
+@mixin body-flex-col-wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin center-wrapper-sml {
+  width: clamp(200px, 100%, $min-320);
+  margin: 0 auto;
+  padding: 0;
+}
+
+@mixin center-wrapper-320 {
+  width: $min-320;
+  margin: 0 auto;
+  padding: 0;
+}
+
 @mixin center-wrapper-900 {
   width: clamp($min-320, 100%, $max-900);
   margin: 0 auto;
@@ -22,4 +54,20 @@
   width: clamp($min-320, 100%, $max-1440);
   margin: 0 auto;
   padding: 0;
+}
+
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == mobile {
+    @media (max-width: $breakpoint-mobile) {
+      @content;
+    }
+  } @else if $breakpoint == tablet {
+    @media (max-width: $breakpoint-tablet) {
+      @content;
+    }
+  } @else if $breakpoint == desktop {
+    @media (min-width: $breakpoint-desktop) {
+      @content;
+    }
+  }
 }
