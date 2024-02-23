@@ -1,1 +1,159 @@
-<!DOCTYPE html><html lang="sv"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>SASS - DT211G - Moment 3 - CSS-preprocessorer</title><script src="https://kit.fontawesome.com/c8569412d3.js" crossorigin></script><link rel="stylesheet" href="/index.8798fc16.css"></head><body> <div class="body-wrapper">  <header> <div class="hero-section"> <a href="/index.html" class="logo-link"> <div class="logo" id="logotype"></div> </a> <nav class="navbar-container"> <div class="div-logo-text"> <span class="bebas-neue-logo">COSI2301</span> <span class="montserrat-logo">DT211G</span> <span class="small-text-adjust">UPPGIFT <span class="yellow">3</span></span> </div> <ul class="navbar-links"> <li><a href="/index.html">Hem</a></li> <li><a href="#" class="active">SASS</a></li> <li><a href="#">Animering</a></li> <li><a href="#">Diagram</a></li> <li><a href="#">Karta</a></li> <li><a href="#" id="theme-toggler"><span>☀️</span></a></li> </ul> </nav> </div> </header>  <div class="div-clouds-border"></div> <main class="main-content sass"> <h1>SASS</h1> <p class="info-text"><strong>Undersidan SASS ska innehålla en utvärdering av ditt arbete med SASS. Vilka för- och nackdelar ser du med SASS? Hur var det att komma igång att arbete med en CSS-preprocessor?</strong> </p> <p class="info-text">Det har varit mycket att ta in när det kommer till SASS / SCSS men jag känner att det kommer att göra väldigt stor nytta och skillnad för mig i mitt kodande. Jag har kämpat lite inledningsvis med att hitta hur jag skall påbörja ett projekt med SASS / SCSS. Jag har försökt att skapa en en sorts tom-mall som innehåller nödvändiga grundläggande partials för att följa 7-1-mönstret.<br> Jag är väldigt besatt av tanken att följa någon sorts "best practice" så det har blivit lite av ett hopkok men det känns som att jag är något på spåret och förhoppningsvis så blir det bra i kommande projekt.</p> <p class="info-text">Jag har i mina senaste kursers laborationer och projekt kämpat med att mina filer blir alldeles för stora, svåröverskådliga och väldigt ooptimerade när det kommer till hur de skalats upp med hur uppgiften växt. Frmförallt CSS och Javascript.<br> CSS-preprocessorer kommer att hjälpa mig massor med överskådligheten i mina stilmallar och det problemet jag har just nu är att förstå hur jag skall tänka med vilka klasser som går i vilken partial. Detta är dock ett tämligen angenämt problem.</p> <p class="info-text">Jag bör kanske nämna att mina partials på intet sätt är perfekta men jag tror mig börja förstå lite hur de skall utformas. Några saker hade jag kunnat placera annorlunda i dessa och det finns nog några jag krånglat till mer än nödvändigt. </p> <p class="info-text">Lite kortfattat om sidan i sig så har jag också två saker jag inte velat rucka på och som jag måste "få ur mig";</p> <ol> <li>Dels hade jag klart för mig när jag såg att det skulle vara mörkt och ljust tema att jag verkligen ville "leka" med en bild eller bakgrundsbild som byts ut när man skiftar tema och resultatet av detta är vad som syns. Jag hade en vision om att logotypen blir lite av en sol / måne och bakgrunden anpassar sig för att matcha detta.</li> <li>Och dels så kommer jag inte ifrån en tanke om att det bör gå att göra en sida som fullt anpassar sig lite "automatiskt" utan brytpunkter. Jag började därför att utgå från detta och ville inte blanda in brytpunkter, åtminstone alltid hålla dem till ett absolut minimum och med clamp() för att anpassa bredd och mått. Jag vet inte vad det är men jag gillar inte brytpunkter och de känns onaturliga för mig. Jag var dock tvungen att ge vika när jag insåg att eftersom jag låst mig till min nuvarande layout i och med nummer 1 så behövde jag ta bort lite padding och margin på vissa ställen och ändra hur cards visas bland annat.</li> </ol> <p class="info-text"> Webbplatsen är därför lite "kaotisk" på grund av detta. Jag hade inget förarbete i form designskisser eller liknande klart för mig innan utan bara en idé om mörkt/ljust utseende. </p> <h1>👍 Fördelar</h1> <div class="cards-sass-container"> <div class="sass-card"> <h2>Modulärt 🧩</h2> <p>Man kan dela upp CSS i flera filer som sedan importeras i en huvudfil. Detta gör att projektet blir bättre organiserat och gör att koden blir enklare att underhålla</p> </div> <div class="sass-card"> <h2>Mixins 🔁</h2> <p>Man kan skapa grupper av CSS-regler som går att återanvända över hela projektet. Och med if / else får man många fler alternativ att styra lite mer komplex CSS</p> </div> <div class="sass-card"> <h2>Nästling 🪆</h2> <p>Att kunna nästla CSS-regler är väldigt positivt och gör koden mycket mer lättöverskådlig, koden blir också lite mer välstrukterad</p> </div> </div> <h1>👎 Nackdelar</h1> <div class="cards-sass-container"> <div class="sass-card"> <h2>Inlärningskurva 📈</h2> <p>Att komma igång med SASS / SCSS har varit lätt utmanande, en del nya saker att lära sig och ytterligare ett sätt att tänka kring CSS och stilmallar</p> </div> <div class="sass-card"> <h2>Kompilering ⚙️</h2> <p>"Tyvärr" måste SASS / SCSS kompileras innan det fungerar i en webbläsare och det kräver således alltid ett par extra verktyg för att kunna användas</p> </div> <div class="sass-card"> <h2>Överanvändning 🤯</h2> <p>Jag känner redan nu när man börjat peta i det att man snabbt kan överanvända vissa funktioner såsom nästling och mixins</p> </div> </div> </main> <div class="div-clouds-border-down"></div>  <footer> <div class="footer-container"> <div class="quick-links"> <a href="/index.html">Hem</a> <a href="#">SASS</a> <a href="#">Animering</a> <a href="#">Diagram</a> <a href="#">Karta</a> </div> <div class="social-links"> <a href="#"><span class="fa-brands fa-facebook"></span></a> <a href="#"><span class="fa-brands fa-x-twitter"></span></a> <a href="#"><span class="fa-brands fa-instagram"></span></a> </div> <p> Laborationsuppgift 3 DT211G<br> CSS-preprocessorer<br> ©CoSi2301 VT2024 </p> </div> </footer> </div> <script src="/index.945a9525.js"></script> </body></html>
+<!DOCTYPE html><!-- sass.html. DT211G - Moment 3 - CSS-preprocessorer , Conny Sirviö VT2024 -->
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SASS - DT211G - Moment 3 - CSS-preprocessorer</title>
+    <script src="https://kit.fontawesome.com/c8569412d3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/index.b10d73a7.css">
+</head>
+
+<body>
+    <div class="body-wrapper">
+        <!-- Sidtopp -->
+        <header>
+            <div class="hero-section">
+                <a href="/index.html" class="logo-link">
+                    <div class="logo" id="logotype"></div>
+                </a>
+                <nav class="navbar-container">
+                    <div class="div-logo-text">
+                        <span class="bebas-neue-logo">COSI2301</span>
+                        <span class="montserrat-logo">DT211G</span>
+                        <span class="small-text-adjust">UPPGIFT <span class="yellow">3</span></span>
+                    </div>
+                    <ul class="navbar-links">
+                        <li><a href="/index.html">Hem</a></li>
+                        <li><a href="#" class="active">SASS</a></li>
+                        <li><a href="/animering.html">Animering</a></li>
+                        <li><a href="#">Diagram</a></li>
+                        <li><a href="#">Karta</a></li>
+                        <li><a href="#" id="theme-toggler"><span>☀️</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- Huvudinnehåll -->
+        <div class="div-clouds-border">
+            <div class="div-clouds-border-ani">
+                <div class="clouds-border-content"></div>
+                <div class="clouds-border-content"></div>
+                <div class="clouds-border-content"></div>
+            </div>
+        </div>
+        <main class="main-content sass">
+            <h1>SASS</h1>
+            <p class="info-text"><strong>Undersidan SASS ska innehålla en utvärdering av ditt arbete med SASS. Vilka
+                    för- och
+                    nackdelar ser du med SASS? Hur var det att komma igång att arbete med en CSS-preprocessor?</strong>
+            </p>
+            <p class="info-text">Det har varit mycket att ta in när det kommer till SASS / SCSS men jag känner att det
+                kommer att göra väldigt stor nytta och skillnad för mig i mitt kodande. Jag har kämpat lite
+                inledningsvis med att hitta hur jag skall påbörja ett projekt med SASS / SCSS. Jag har försökt att skapa
+                en en sorts tom-mall som innehåller nödvändiga grundläggande partials för att följa 7-1-mönstret.<br>
+                Jag är väldigt besatt av tanken att följa någon sorts "best practice" så det har blivit lite av ett
+                hopkok men det känns som att jag är något på spåret och förhoppningsvis så blir det bra i kommande
+                projekt.</p>
+            <p class="info-text">Jag har i mina senaste kursers laborationer och projekt kämpat med att mina filer blir
+                alldeles för
+                stora, svåröverskådliga och väldigt ooptimerade när det kommer till hur de skalats upp med hur uppgiften
+                växt. Frmförallt CSS och Javascript.<br>
+                CSS-preprocessorer kommer att hjälpa mig massor med överskådligheten i mina stilmallar och det problemet
+                jag har just nu är att förstå hur jag skall tänka med vilka klasser som går i vilken partial. Detta är
+                dock ett tämligen angenämt problem.</p>
+            <p class="info-text">Jag bör kanske nämna att mina partials på intet sätt är perfekta men jag tror mig börja
+                förstå lite hur
+                de
+                skall utformas. Några saker hade jag kunnat placera annorlunda i dessa och det finns nog några jag
+                krånglat till mer än nödvändigt.
+            </p>
+            <p class="info-text">Lite kortfattat om sidan i sig så har jag också två saker jag inte velat rucka på och
+                som jag måste "få ur mig";</p>
+            <ol>
+                <li>Dels hade jag klart för mig när jag såg att det skulle vara mörkt och ljust tema att jag verkligen
+                    ville "leka" med en bild eller bakgrundsbild som byts ut när man skiftar tema och resultatet av
+                    detta är vad som syns. Jag hade en vision om att logotypen blir lite av en sol / måne och bakgrunden
+                    anpassar sig för att matcha detta.</li>
+                <li>Och dels så kommer jag inte ifrån en tanke om att det bör gå att göra en sida som fullt anpassar sig
+                    lite "automatiskt" utan brytpunkter. Jag började därför att utgå från detta och ville inte blanda in
+                    brytpunkter, åtminstone alltid hålla dem till ett absolut minimum och med clamp() för att anpassa
+                    bredd och mått. Jag vet inte vad det är men jag
+                    gillar inte brytpunkter och de känns onaturliga för mig. Jag var dock tvungen att ge vika när jag
+                    insåg att eftersom jag låst mig till min nuvarande layout i och med nummer 1 så behövde jag ta bort
+                    lite padding och margin på vissa ställen och ändra hur cards visas bland annat.</li>
+            </ol>
+            <p class="info-text"> Webbplatsen är därför lite "kaotisk" på grund av detta. Jag hade inget förarbete i
+                form designskisser eller liknande klart för mig innan utan bara en idé om mörkt/ljust utseende.
+            </p>
+            <h1>👍 Fördelar</h1>
+            <div class="cards-sass-container">
+                <div class="sass-card">
+                    <h2>Modulärt 🧩</h2>
+                    <p>Man kan dela upp CSS i flera filer som sedan importeras i en huvudfil. Detta gör att projektet
+                        blir bättre organiserat och gör att koden blir enklare att underhålla</p>
+                </div>
+                <div class="sass-card">
+                    <h2>Mixins 🔁</h2>
+                    <p>Man kan skapa grupper av CSS-regler som går att återanvända över hela projektet. Och med if /
+                        else får man många fler alternativ att styra lite mer komplex CSS</p>
+                </div>
+                <div class="sass-card">
+                    <h2>Nästling 🪆</h2>
+                    <p>Att kunna nästla CSS-regler är väldigt positivt och gör koden mycket mer lättöverskådlig, koden
+                        blir också lite mer välstrukterad</p>
+                </div>
+            </div>
+            <h1>👎 Nackdelar</h1>
+            <div class="cards-sass-container">
+                <div class="sass-card">
+                    <h2>Inlärningskurva 📈</h2>
+                    <p>Att komma igång med SASS / SCSS har varit lätt utmanande, en del nya saker att lära sig och
+                        ytterligare ett sätt att tänka kring CSS och stilmallar</p>
+                </div>
+                <div class="sass-card">
+                    <h2>Kompilering ⚙️</h2>
+                    <p>"Tyvärr" måste SASS / SCSS kompileras innan det fungerar i en webbläsare och det kräver således
+                        alltid ett par extra verktyg för att kunna användas</p>
+                </div>
+                <div class="sass-card">
+                    <h2>Överanvändning 🤯</h2>
+                    <p>Jag känner redan nu när man börjat peta i det att man snabbt kan överanvända vissa funktioner
+                        såsom nästling och mixins</p>
+                </div>
+            </div>
+        </main>
+        <div class="div-clouds-border">
+            <div class="div-clouds-border-ani">
+                <div class="clouds-border-content-down"></div>
+                <div class="clouds-border-content-down"></div>
+                <div class="clouds-border-content-down"></div>
+            </div>
+        </div>
+        <!-- Sidfoten -->
+        <footer>
+            <div class="footer-container">
+                <div class="quick-links">
+                    <a href="/index.html">Hem</a>
+                    <a href="#">SASS</a>
+                    <a href="/animering.html">Animering</a>
+                    <a href="#">Diagram</a>
+                    <a href="#">Karta</a>
+                </div>
+                <div class="social-links">
+                    <a href="#"><span class="fa-brands fa-facebook"></span></a>
+                    <a href="#"><span class="fa-brands fa-x-twitter"></span></a>
+                    <a href="#"><span class="fa-brands fa-instagram"></span></a>
+                </div>
+                <p>
+                    Laborationsuppgift 3 DT211G<br>
+                    CSS-preprocessorer<br>
+                    ©CoSi2301 VT2024
+                </p>
+            </div>
+        </footer>
+    </div>
+    <script src="/index.aa69868b.js"></script>
+<script src="/sass.1ca36dc7.js"></script></body>
+
+</html>
