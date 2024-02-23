@@ -11,12 +11,18 @@ body.light-theme .main-content {
   background-color: $light-main-background-color;
 }
 
-body.light-theme .div-clouds-border {
-  background-image: url("../img/ljusamoln.svg");
+body.light-theme .clouds-border-content {
+  background: url("../img/ljusamoln.svg");
+  background-position: top;
+  background-size: cover;
+  transition: background-image $transition-speed ease-in-out;
 }
 
-body.light-theme .div-clouds-border-down {
+body.light-theme .clouds-border-content-down {
   background-image: url("../img/ljusamoln_under.svg");
+  background-position: bottom;
+  background-size: cover;
+  transition: background-image $transition-speed ease-in-out;
 }
 
 body.light-theme .navbar-container ul li a {

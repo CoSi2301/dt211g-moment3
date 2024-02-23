@@ -94,3 +94,20 @@ button.addEventListener("mouseleave", function () {
     this.textContent = "🌑";
   }
 });
+
+// ------------------------------------------------------------------------------------------------
+// Pausar border scroll vid resize ----------------------------------------------------------------
+// ---------------------------------------------------------------- Pausar border scroll vid resize
+
+window.addEventListener("resize", function () {
+  // Hitta det animerade elementet
+  var animatedElement = document.querySelector(".div-clouds-border-ani");
+  animatedElement.style.animationPlayState = "paused";
+
+  setTimeout(function () {
+    animatedElement.style.animation = "none";
+    animatedElement.offsetHeight;
+    animatedElement.style.animation = "";
+    animatedElement.style.animationPlayState = "running";
+  }, 0);
+});

@@ -16,13 +16,17 @@ body.dark-theme .main-content {
   background-color: $dark-main-background-color;
 }
 
-body.dark-theme .div-clouds-border {
-  background-image: url("../img/morkamoln.svg");
+body.dark-theme .clouds-border-content {
+  background: url("../img/morkamoln.svg");
+  background-position: top;
+  background-size: cover;
   transition: background-image $transition-speed ease-in-out;
 }
 
-body.dark-theme .div-clouds-border-down {
+body.dark-theme .clouds-border-content-down {
   background-image: url("../img/morkamoln_under.svg");
+  background-position: bottom;
+  background-size: cover;
   transition: background-image $transition-speed ease-in-out;
 }
 

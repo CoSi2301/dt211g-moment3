@@ -1,1 +1,154 @@
-<!DOCTYPE html><html lang="sv"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>HEM - DT211G - Moment 3 - CSS-preprocessorer</title><script src="https://kit.fontawesome.com/c8569412d3.js" crossorigin></script><link rel="stylesheet" href="/index.8798fc16.css"></head><body> <div class="body-wrapper">  <header> <div class="hero-section"> <a href="#" class="logo-link"> <div class="logo" id="logotype"></div> </a> <nav class="navbar-container"> <div class="div-logo-text"> <span class="bebas-neue-logo">COSI2301</span> <span class="montserrat-logo">DT211G</span> <span class="small-text-adjust">UPPGIFT <span class="yellow">3</span></span> </div> <ul class="navbar-links"> <li><a href="#" class="active">Hem</a></li> <li><a href="/sass.html">SASS</a></li> <li><a href="#">Animering</a></li> <li><a href="#">Diagram</a></li> <li><a href="#">Karta</a></li> <li><a href="#" id="theme-toggler"><span>☀️</span></a></li> </ul> </nav> </div> </header>  <div class="div-clouds-border"></div> <main class="main-content"> <h1>CSS-preprocessorer</h1> <p class="info-text"> Skapa en enklare fiktiv webbplats med valfritt innehåll. Webbplatsen ska bestå av minst två HTML-sidor (men vill du lägga in flera är det ok). En startsida och en undersida som heter SASS. Design, struktur etcetera bestämmer du själv. Du kommer att fortsätta utveckla denna webbplats i nästa laboration så lägg gärna lite energi på färg och form. </p> <div class="col-wrap"> <div class="left-col"> <p><strong>Krav på innehåll i denna webbplats:</strong></p> <ul> <li>Överskrifter och text med valfritt innehåll</li> <li>Undersidan SASS ska innehålla en utvärdering av ditt arbete med SASS, Vilka för- och nackdelar ser du med SASS? Hur var det att komma igång att arbete med en CSS-preprocessor?</li> <li>En huvudmeny med minst fem meny-alternativ (kan länkas till enbart "#")</li> <li>Webbplatsen ska ha stöd för ljust och mörkt tema med media query, Ta fram två färgscheman för detta</li> <li>Responsiv webbdesign, både på innehåll och meny, Ska fungera väl på stora och små enheter, Minst två stycken bilder av något slag.</li> </ul> </div> <div class="right-col"> <p><strong>Webbplatsens CSS-kod ska genereras från SASS-kod. Följande saker ska (minimum) finnas med:</strong></p> <ul> <li>Variabler (minst färgschema ska lagras i variabler)</li> <li>Color functions (darken och lighten ska som minst användas, men använd gärna fler)</li> <li>Nesting</li> <li>Mixins</li> <li>Selector inheritance (nyckelordet "@extend")</li> <li>If/else-satser</li> <li>Minst en partial</li> <li>Partials med en god filstruktur för CSS-kod</li> </ul> </div> </div> <h1>Information</h1> <div class="cards-container"> <div class="card"> <h2>📌</h2> <p>Mått, padding, färg och typsnitt bland annat är sparat som variabler</p><br>✅ </div> <div class="card"> <h2>🎨</h2> <p>Darken och Lighten används i menyn nere i sidfoten. (Lighten för ljust tema och Darken för mörkt)</p><br>✅ </div> <div class="card"> <h2>🪆</h2> <p>Nesting används på några olika ställen, navigation.scss är nästlad till exempel</p><br>✅ </div> <div class="card"> <h2>🔁</h2> <p>Mixins på den här webbplatsen används främst för att sätta kolumnbredder men även för responsitivitet</p><br>✅ </div> <div class="card"> <h2>➕</h2> <p>@Extend används i sidfoten. .social-links ärver några egenskaper från .quick-links</p><br>✅ </div> <div class="card"> <h2>❓➡️❗</h2> <p>If / else-satser används för att sätta mått på brytpunkterna. (Om "mobile" så blir break point 480px t ex)</p><br>✅ </div> <div class="card"> <h2>🧩</h2> <p>Partials används så mycket som möjligt på den här webbplatsen. Filstrukturen följer 7-1-mönstret </p><br>✅ </div> </div> </main> <div class="div-clouds-border-down"></div>  <footer> <div class="footer-container"> <div class="quick-links"> <a href="#">Hem</a> <a href="/sass.html">SASS</a> <a href="#">Animering</a> <a href="#">Diagram</a> <a href="#">Karta</a> </div> <div class="social-links"> <a href="#"><span class="fa-brands fa-facebook"></span></a> <a href="#"><span class="fa-brands fa-x-twitter"></span></a> <a href="#"><span class="fa-brands fa-instagram"></span></a> </div> <p> Laborationsuppgift 3 DT211G<br> CSS-preprocessorer<br> ©CoSi2301 VT2024 </p> </div> </footer> </div> <script src="/index.945a9525.js"></script> </body></html>
+<!DOCTYPE html><!-- index.html. DT211G - Moment 3 - CSS-preprocessorer , Conny Sirviö VT2024 -->
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEM - DT211G - Moment 3 - CSS-preprocessorer</title>
+    <script src="https://kit.fontawesome.com/c8569412d3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/index.b10d73a7.css">
+</head>
+
+<body>
+    <div class="body-wrapper">
+        <!-- Sidtopp -->
+        <header>
+            <div class="hero-section">
+                <a href="#" class="logo-link">
+                    <div class="logo" id="logotype"></div>
+                </a>
+                <nav class="navbar-container">
+                    <div class="div-logo-text">
+                        <span class="bebas-neue-logo">COSI2301</span>
+                        <span class="montserrat-logo">DT211G</span>
+                        <span class="small-text-adjust">UPPGIFT <span class="yellow">3</span></span>
+                    </div>
+                    <ul class="navbar-links">
+                        <li><a href="#" class="active">Hem</a></li>
+                        <li><a href="/sass.html">SASS</a></li>
+                        <li><a href="/animering.html">Animering</a></li>
+                        <li><a href="#">Diagram</a></li>
+                        <li><a href="#">Karta</a></li>
+                        <li><a href="#" id="theme-toggler"><span>☀️</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </header>
+        <!-- Huvudinnehåll -->
+        <div class="div-clouds-border">
+            <div class="div-clouds-border-ani">
+                <div class="clouds-border-content"></div>
+                <div class="clouds-border-content"></div>
+                <div class="clouds-border-content"></div>
+            </div>
+        </div>
+        <main class="main-content">
+            <h1>CSS-preprocessorer</h1>
+            <p class="info-text"> Skapa en enklare fiktiv webbplats med valfritt innehåll. Webbplatsen ska bestå av
+                minst två HTML-sidor
+                (men vill du lägga in flera är det ok). En startsida och en undersida som heter SASS.
+
+                Design, struktur etcetera bestämmer du själv. Du kommer att fortsätta utveckla denna webbplats i nästa
+                laboration så lägg gärna lite energi på färg och form. </p>
+            <div class="col-wrap">
+                <div class="left-col">
+                    <p><strong>Krav på innehåll i denna webbplats:</strong></p>
+                    <ul>
+                        <li>Överskrifter och text med valfritt innehåll</li>
+                        <li>Undersidan SASS ska innehålla en utvärdering av ditt arbete med SASS, Vilka för- och
+                            nackdelar
+                            ser du med SASS? Hur var det att komma igång att arbete med en CSS-preprocessor?</li>
+                        <li>En huvudmeny med minst fem meny-alternativ (kan länkas till enbart "#")</li>
+                        <li>Webbplatsen ska ha stöd för ljust och mörkt tema med media query, Ta fram två färgscheman
+                            för
+                            detta</li>
+                        <li>Responsiv webbdesign, både på innehåll och meny, Ska fungera väl på stora och små enheter,
+                            Minst två stycken bilder av något slag.</li>
+                    </ul>
+                </div>
+                <div class="right-col">
+                    <p><strong>Webbplatsens CSS-kod ska genereras från SASS-kod. Följande saker ska (minimum) finnas
+                            med:</strong></p>
+                    <ul>
+                        <li>Variabler (minst färgschema ska lagras i variabler)</li>
+                        <li>Color functions (darken och lighten ska som minst användas, men använd gärna fler)</li>
+                        <li>Nesting</li>
+                        <li>Mixins</li>
+                        <li>Selector inheritance (nyckelordet "@extend")</li>
+                        <li>If/else-satser</li>
+                        <li>Minst en partial</li>
+                        <li>Partials med en god filstruktur för CSS-kod</li>
+                    </ul>
+                </div>
+            </div>
+            <h1>Information</h1>
+            <div class="cards-container">
+                <div class="card">
+                    <h2>📌</h2>
+                    <p>Mått, padding, färg och typsnitt bland annat är sparat som variabler</p><br>✅
+                </div>
+                <div class="card">
+                    <h2>🎨</h2>
+                    <p>Darken och Lighten används i menyn nere i sidfoten. (Lighten för ljust tema och Darken för
+                        mörkt)</p><br>✅
+                </div>
+                <div class="card">
+                    <h2>🪆</h2>
+                    <p>Nesting används på några olika ställen, navigation.scss är nästlad till exempel</p><br>✅
+                </div>
+                <div class="card">
+                    <h2>🔁</h2>
+                    <p>Mixins på den här webbplatsen används främst för att sätta kolumnbredder men även för
+                        responsitivitet</p><br>✅
+                </div>
+                <div class="card">
+                    <h2>➕</h2>
+                    <p>@Extend används i sidfoten. .social-links ärver några egenskaper från .quick-links</p><br>✅
+                </div>
+                <div class="card">
+                    <h2>❓➡️❗</h2>
+                    <p>If / else-satser används för att sätta mått på brytpunkterna. (Om "mobile" så blir break point
+                        480px t ex)</p><br>✅
+                </div>
+                <div class="card">
+                    <h2>🧩</h2>
+                    <p>Partials används så mycket som möjligt på den här webbplatsen. Filstrukturen följer 7-1-mönstret
+                    </p><br>✅
+                </div>
+            </div>
+        </main>
+        <div class="div-clouds-border">
+            <div class="div-clouds-border-ani">
+                <div class="clouds-border-content-down"></div>
+                <div class="clouds-border-content-down"></div>
+                <div class="clouds-border-content-down"></div>
+            </div>
+        </div>
+        <!-- Sidfoten -->
+        <footer>
+            <div class="footer-container">
+                <div class="quick-links">
+                    <a href="#">Hem</a>
+                    <a href="/sass.html">SASS</a>
+                    <a href="/animering.html">Animering</a>
+                    <a href="#">Diagram</a>
+                    <a href="#">Karta</a>
+                </div>
+                <div class="social-links">
+                    <a href="#"><span class="fa-brands fa-facebook"></span></a>
+                    <a href="#"><span class="fa-brands fa-x-twitter"></span></a>
+                    <a href="#"><span class="fa-brands fa-instagram"></span></a>
+                </div>
+                <p>
+                    Laborationsuppgift 3 DT211G<br>
+                    CSS-preprocessorer<br>
+                    ©CoSi2301 VT2024
+                </p>
+            </div>
+        </footer>
+    </div>
+    <script src="/index.aa69868b.js"></script>
+<script src="/dt211g-moment3.59712999.js"></script></body>
+
+</html>

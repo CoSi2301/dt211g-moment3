@@ -1,0 +1,42 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+@keyframes border-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-33.3333%);
+  }
+}
+
+.div-clouds-border {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  min-height: 100px;
+  height: 100px;
+  max-height: 100px;
+  @include respond-to(mobile) {
+    min-height: 50px;
+    height: 50px;
+    max-height: 50px;
+  }
+}
+
+.clouds-border-content,
+.clouds-border-content-down {
+  display: inline-block;
+  width: 33.3333%;
+  height: 100%;
+}
+
+.div-clouds-border-ani {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5760px;
+  height: 100%;
+  display: flex;
+  animation: border-scroll $border-scroll-speed linear infinite;
+}
