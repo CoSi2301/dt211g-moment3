@@ -1,0 +1,88 @@
+<!DOCTYPE html><!-- karta.html. DT211G - Moment 5 - Dynamiska webbplatser , Conny Sirviö VT2024 -->
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karta - DT211G - Moment 5 - Dynamiska webbplatser</title>
+    <script src="https://kit.fontawesome.com/c8569412d3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="scss/main.scss">
+</head>
+
+<body>
+    <div class="body-wrapper">
+        <!-- Sidtopp -->
+        <header>
+            <div class="hero-section">
+                <a href="index.html" class="logo-link">
+                    <div class="logo" id="logotype"></div>
+                </a>
+                <nav class="navbar-container">
+                    <div class="div-logo-text">
+                        <span class="bebas-neue-logo">COSI2301</span>
+                        <span class="montserrat-logo">DT211G</span>
+                        <span class="small-text-adjust">UPPGIFTER 3,4,<span class="yellow">5</span></span>
+                    </div>
+                    <ul class="navbar-links">
+                        <li><a href="index.html">Hem</a></li>
+                        <li><a href="sass.html">SASS</a></li>
+                        <li><a href="animering.html">Animering</a></li>
+                        <li><a href="diagram.html">Diagram</a></li>
+                        <li><a href="karta.html" class="active">Karta</a></li>
+                        <li><a href="#" id="theme-toggler"><span>☀️</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- Huvudinnehåll -->
+        <div class="div-clouds-border">
+            <div class="div-clouds-border-ani">
+                <div class="clouds-border-content"></div>
+                <div class="clouds-border-content"></div>
+                <div class="clouds-border-content"></div>
+            </div>
+        </div>
+        <main class="main-content sass">
+            <h1><span class="header-icon">🗺️</span> Karta</h1>
+            <p class="info-text">Krav på uppgiften:</p>
+            <ol>
+                <li>Det ska finnas ett textfält någonstans på sidan där användaren kan skriva in en plats.</li>
+                <li>Vid val av plats ska AJAX-anrop (Fetch, Import eller motsvarande till extern källa) göras till vald
+                    karttjänst.</li>
+                <li>Platsen ska visuellt visas på kartan med markör för vald plats.</li>
+            </ol>
+        </main>
+        <div class="div-clouds-border">
+            <div class="div-clouds-border-ani">
+                <div class="clouds-border-content-down"></div>
+                <div class="clouds-border-content-down"></div>
+                <div class="clouds-border-content-down"></div>
+            </div>
+        </div>
+        <!-- Sidfoten -->
+        <footer>
+            <div class="footer-container">
+                <div class="quick-links">
+                    <a href="index.html">Hem</a>
+                    <a href="sass.html">SASS</a>
+                    <a href="animering.html">Animering</a>
+                    <a href="diagram.html">Diagram</a>
+                    <a href="#">Karta</a>
+                </div>
+                <div class="social-links">
+                    <a href="#"><span class="fa-brands fa-facebook"></span></a>
+                    <a href="#"><span class="fa-brands fa-x-twitter"></span></a>
+                    <a href="#"><span class="fa-brands fa-instagram"></span></a>
+                </div>
+                <p>
+                    Laborationsuppgift 5 DT211G<br>
+                    Dynamiska webbplatser<br>
+                    ©CoSi2301 VT2024
+                </p>
+            </div>
+        </footer>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
