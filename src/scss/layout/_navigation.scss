@@ -3,8 +3,8 @@
 
 .navbar-container {
   @include center-wrapper-900;
-  display: flex;
-  flex-direction: row;
+  display: $flex-display;
+  flex-direction: $flex-display-row;
   justify-content: space-between;
   border-radius: $sm-padding;
   padding: $xs-padding $xs-padding $xs-padding 0.7rem;
@@ -15,7 +15,7 @@
     justify-content: center;
   }
   ul {
-    display: flex;
+    display: $flex-display;
     justify-content: space-between;
     align-items: center;
     padding: 0;
@@ -32,8 +32,8 @@
     }
   }
   .div-logo-text {
-    display: flex;
-    flex-direction: column;
+    display: $flex-display;
+    flex-direction: $flex-display-col;
     justify-content: center;
     gap: 0;
     align-content: center;

@@ -21,7 +21,7 @@
     color: $footer-link-color;
     font-family: $bebas-font-stack;
     margin: 0 $xs-padding;
-    transition: color $transition-speed ease;
+    transition: color $transition-speed $ease-function;
   }
 
   .social-links {
@@ -31,7 +31,7 @@
     }
     a {
       color: $footer-link-color;
-      transition: color $transition-speed ease;
+      transition: color $transition-speed $ease-function;
     }
   }
   p {

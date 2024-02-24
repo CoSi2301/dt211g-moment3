@@ -9,8 +9,8 @@
   @include respond-to(mobile) {
     height: $hero-height-sm;
   }
-  display: flex;
-  flex-direction: column;
+  display: $flex-display;
+  flex-direction: $flex-display-col;
   justify-content: center;
   align-items: center;
 
@@ -22,11 +22,11 @@
     background-image: url("../img/cs_day.svg");
     background-size: cover;
     background-position: center;
-    transition: background-image $transition-speed ease-in-out;
+    transition: background-image $transition-speed $ease-in-out-function;
   }
   .logo-link {
     margin: $m-padding;
-    display: block;
+    display: $block-display;
     width: 150px;
     max-width: 150px;
     height: 150px;

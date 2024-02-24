@@ -15,32 +15,32 @@ body.light-theme .clouds-border-content {
   background: url("../img/ljusamoln.svg");
   background-position: top;
   background-size: cover;
-  transition: background-image $transition-speed ease-in-out;
+  transition: background-image $transition-speed $ease-in-out-function;
 }
 
 body.light-theme .clouds-border-content-down {
   background-image: url("../img/ljusamoln_under.svg");
   background-position: bottom;
   background-size: cover;
-  transition: background-image $transition-speed ease-in-out;
+  transition: background-image $transition-speed $ease-in-out-function;
 }
 
 body.light-theme .navbar-container ul li a {
   color: $dark-body-background-color;
   &:hover:not(.active) {
     color: $accent-color;
-    background-color: hsla(0, 0%, 0%, 0.648);
+    background-color: $navbar-hover-background-color;
   }
 }
 
 body.light-theme .navbar-container ul li .active {
   color: $accent-color;
-  background-color: hsla(0, 0%, 0%, 0.648);
+  background-color: $navbar-hover-background-color;
   cursor: default;
 }
 
 body.light-theme .card {
-  background-color: hsl(0, 0%, 100%);
+  background-color: $white-color;
 }
 
 body.light-theme .sass-card {
@@ -57,5 +57,5 @@ body.light-theme footer p {
 
 body.light-theme .quick-links,
 body.light-theme .social-links {
-  background-color: hsla(0, 0%, 0%, 0.648);
+  background-color: $navbar-hover-background-color;
 }

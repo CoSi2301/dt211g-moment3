@@ -19,5 +19,5 @@
   background-position: top;
   background-size: cover;
   background-repeat: repeat-x;
-  transition: background-image $transition-speed ease-in-out;
+  transition: background-image $transition-speed $ease-in-out-function;
 }

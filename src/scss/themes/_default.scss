@@ -6,7 +6,7 @@
 }
 
 .main-content {
-  transition: background-color $transition-speed ease-in-out;
+  transition: background-color $transition-speed $ease-in-out-function;
   padding: $m-padding;
   .info-text {
     @include center-wrapper-1200;
@@ -29,15 +29,15 @@
 
 .col-wrap {
   @include center-wrapper-1200;
-  display: flex;
-  flex-direction: row;
+  display: $flex-display;
+  flex-direction: $flex-display-row;
   justify-content: space-evenly;
   gap: 1rem;
   padding: $sm-padding;
   margin-bottom: 2rem;
 
   @include respond-to(tablet) {
-    flex-direction: column;
+    flex-direction: $flex-display-col;
     max-width: 100%;
   }
 

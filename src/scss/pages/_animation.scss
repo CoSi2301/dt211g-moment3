@@ -38,7 +38,7 @@
 
 .clouds-border-content,
 .clouds-border-content-down {
-  display: inline-block;
+  display: $block-display-inline;
   width: 33.3333%;
   height: 100%;
 }
@@ -49,12 +49,12 @@
   left: 0;
   width: 5760px;
   height: 100%;
-  display: flex;
+  display: $flex-display;
   animation: border-scroll $border-scroll-speed linear infinite;
 }
 
 .header-icon {
-  display: inline-block;
+  display: $block-display-inline;
   animation: header-icon-ani $icon-ani-time infinite;
 }
 
@@ -64,8 +64,8 @@ body.light-theme {
   .left-col,
   .right-col {
     cursor: default;
-    transition: box-shadow $transition-time $ease-function;
-    box-shadow: 0 0 0px rgba(0, 0, 0, 0);
+    transition: box-shadow $transition-time $ease-in-out-function;
+    box-shadow: 0 0 0px $shadow-color-none;
 
     &:hover {
       box-shadow: 0 4px 8px $shadow-color-light;
@@ -79,8 +79,8 @@ body.dark-theme {
   .left-col,
   .right-col {
     cursor: default;
-    transition: box-shadow $transition-time $ease-function;
-    box-shadow: 0 0 0px rgba(0, 0, 0, 0);
+    transition: box-shadow $transition-time $ease-in-out-function;
+    box-shadow: 0 0 0px $shadow-color-none;
 
     &:hover {
       box-shadow: 0 4px 8px $shadow-color-dark;
