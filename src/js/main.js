@@ -100,8 +100,7 @@ button.addEventListener("mouseleave", function () {
 // ---------------------------------------------------------------- Pausar border scroll vid resize
 
 window.addEventListener("resize", function () {
-  // Hitta det animerade elementet
-  var animatedElement = document.querySelector(".div-clouds-border-ani");
+  let animatedElement = document.querySelector(".div-clouds-border-ani");
   animatedElement.style.animationPlayState = "paused";
 
   setTimeout(function () {
