@@ -3,7 +3,7 @@
 
 .cards-container {
   @include center-wrapper-1200;
-  display: grid;
+  display: $grid-display;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: $sm-padding;
   padding: $sm-padding $sm-padding $lg-padding $sm-padding;

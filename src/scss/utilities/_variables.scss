@@ -18,6 +18,9 @@ $h1-tablet-size: calc(calc(15px + 0.390625vw) * 1.8);
 /*--------------------------------------------------------------------------------------------------
 Färger
 ------------------------------------------------------------------------------------------ Färger */
+$black-color: hsl(0, 0%, 0%);
+$white-color: hsl(0, 0%, 100%);
+
 $light-body-background-color: hsl(212, 57%, 50%);
 $dark-body-background-color: hsl(218, 100%, 2%);
 $light-main-background-color: hsl(50, 21%, 95%);
@@ -25,14 +28,18 @@ $dark-main-background-color: hsl(206, 42%, 22%);
 $light-primary-color: hsl(218, 100%, 2%);
 $dark-primary-color: hsl(50, 21%, 95%);
 
-$accent-color: hsl(43, 100%, 51%);
+$navbar-hover-background-color: hsla(0, 0%, 0%, 0.648);
 
+$accent-color: hsl(43, 100%, 51%);
 $footer-link-color: hsl(43, 100%, 51%);
+
+$shadow-color-none: hsla(0, 0%, 0%, 0);
+$shadow-color-light: hsla(0, 0%, 0%, 0.2);
+$shadow-color-dark: hsla(0, 0%, 0%, 0.8);
 
 /*--------------------------------------------------------------------------------------------------
 Mått
 -------------------------------------------------------------------------------------------- Mått */
-
 $hero-height-sm: 15rem;
 $hero-height-m: 20rem;
 $hero-height: 23rem;
@@ -66,6 +73,17 @@ $border-scroll-speed: 180s;
 $icon-ani-time: 5s;
 
 $transition-time: 0.3s;
-$ease-function: ease-in-out;
-$shadow-color-light: rgba(0, 0, 0, 0.2);
-$shadow-color-dark: rgba(0, 0, 0, 0.8);
+$ease-function: ease-in;
+$ease-in-out-function: ease-in-out;
+
+/*--------------------------------------------------------------------------------------------------
+Display-attributet
+------------------------------------------------------------------------------ Display-attributet */
+$grid-display: grid;
+
+$flex-display: flex;
+$flex-display-col: column;
+$flex-display-row: row;
+
+$block-display: block;
+$block-display-inline: inline-block;

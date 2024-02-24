@@ -9,5 +9,5 @@
     padding: 0.01;
   }
   cursor: pointer;
-  transition: transform $transition-speed ease-in-out;
+  transition: transform $transition-speed $ease-in-out-function;
 }

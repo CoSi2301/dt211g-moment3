@@ -38,7 +38,7 @@ NAVBAR
 .navbar-container li a {
   font-family: $bebas-font-stack;
   font-size: $navbar-link-size;
-  display: block;
+  display: $block-display;
   line-height: 1;
 }
 
