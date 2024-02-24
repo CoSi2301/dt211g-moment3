@@ -10,6 +10,18 @@
   }
 }
 
+@keyframes header-icon-ani {
+  0% {
+    transform: scale(1, 1) rotate(0);
+  }
+  50% {
+    transform: scale(2, 2) rotate(-15deg);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
 .div-clouds-border {
   overflow: hidden;
   position: relative;
@@ -39,4 +51,39 @@
   height: 100%;
   display: flex;
   animation: border-scroll $border-scroll-speed linear infinite;
+}
+
+.header-icon {
+  display: inline-block;
+  animation: header-icon-ani $icon-ani-time infinite;
+}
+
+body.light-theme {
+  .card,
+  .sass-card,
+  .left-col,
+  .right-col {
+    cursor: default;
+    transition: box-shadow $transition-time $ease-function;
+    box-shadow: 0 0 0px rgba(0, 0, 0, 0);
+
+    &:hover {
+      box-shadow: 0 4px 8px $shadow-color-light;
+    }
+  }
+}
+
+body.dark-theme {
+  .card,
+  .sass-card,
+  .left-col,
+  .right-col {
+    cursor: default;
+    transition: box-shadow $transition-time $ease-function;
+    box-shadow: 0 0 0px rgba(0, 0, 0, 0);
+
+    &:hover {
+      box-shadow: 0 4px 8px $shadow-color-dark;
+    }
+  }
 }
