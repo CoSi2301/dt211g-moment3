@@ -1,5 +1,5 @@
 import "chartist/dist/index.css";
-import { BarChart } from "chartist";
+import { BarChart, PieChart } from "chartist";
 
 async function fetchAndProcessData() {
   try {
@@ -22,12 +22,11 @@ async function fetchAndProcessData() {
     const sixCourses = sortCourseData.slice(0, 6);
     const fivePrograms = sortProgramData.slice(0, 5);
 
-    console.log(sixCourses, fivePrograms);
-
     const courses = sixCourses.map((item) => item.name).reverse();
     const series1 = sixCourses
       .map((item) => parseInt(item.applicantsTotal))
       .reverse();
+    const series2 = fivePrograms.map((item) => parseInt(item.applicantsTotal));
 
     let courseData = {
       labels: courses,
@@ -52,7 +51,7 @@ async function fetchAndProcessData() {
       },
     };
 
-    new BarChart(".ct-chart", courseData, courseOptions).on(
+    new BarChart("#courses-chart", courseData, courseOptions).on(
       "draw",
       function (context) {
         if (context.type === "bar") {
@@ -71,6 +70,37 @@ async function fetchAndProcessData() {
         }
       }
     );
+
+    const chartColors = [
+      "hsl(359, 98%, 43%)",
+      "hsl(4, 84%, 63%)",
+      "hsl(45, 89%, 60%)",
+      "hsl(34, 95%, 42%)",
+      "hsl(345, 6%, 25%)",
+    ];
+
+    const container = document.getElementById("programs-container");
+
+    let html = fivePrograms
+      .map((program, index) => {
+        return `
+    <div class='program-item'>
+      <div class='box' style="background-color: ${chartColors[index]};"></div>
+      <div>${program.name}</div>
+    </div>
+  `;
+      })
+      .join("");
+
+    container.innerHTML = html;
+
+    const programData = {
+      series: series2,
+    };
+
+    new PieChart("#program-chart", programData, {
+      labelInterpolationFnc: (value) => value,
+    });
   } catch (error) {
     console.error(`Något gick fel: ${error}`);
   }
