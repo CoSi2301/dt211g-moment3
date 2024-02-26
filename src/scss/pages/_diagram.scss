@@ -1,7 +1,8 @@
 @use "../utilities/variables" as *;
 @use "../utilities/mixins" as *;
 
-.ct-chart {
+.ct-chart,
+.ct-chart-pie {
   width: 100%;
   height: 500px;
   @include respond-to(mobile) {
@@ -17,6 +18,16 @@
   stroke: $accent-color;
 }
 
+.ct-chart .ct-label {
+  color: $light-primary-color;
+  fill: $light-primary-color;
+}
+
+.ct-chart-pie .ct-label {
+  fill: $white-color;
+  color: $white-color;
+}
+
 .sass-card {
   padding: 2rem 3rem 2rem 2rem;
   @include respond-to(mobile) {
@@ -26,4 +37,41 @@
 
 .sass-card p {
   text-align: center;
+  margin-bottom: 1rem;
+  @include respond-to(mobile) {
+    margin-bottom: 0.1rem;
+  }
+}
+
+#programs-container {
+  padding: 2rem;
+  @include respond-to(mobile) {
+    padding: 0.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  display: $grid-display;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: $sm-padding;
+}
+
+.program-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  @include respond-to(mobile) {
+    font-size: 0.8rem;
+  }
+}
+
+.box {
+  min-width: 30px;
+  height: 20px;
+  margin-right: 10px;
+  @include respond-to(mobile) {
+    min-width: 15px;
+    max-width: 20px;
+    height: 15px;
+    max-height: 20px;
+    margin-right: 5px;
+  }
 }
