@@ -51,6 +51,21 @@
                     karttjänst.</li>
                 <li>Platsen ska visuellt visas på kartan med markör för vald plats.</li>
             </ol>
+            <p class="info-text">Jag har valt att lösa uppgiften med Google Maps Javascript API efter inrådan på
+                föreläsningen. Som nämndes så är det ju den vanligaste karttjänsten och med största sannolikhet något
+                man kommer att stöta på i verkliga livet så det är bra att känna på den helt enkelt.</p>
+            <div class="cards-sass-container">
+                <div class="sass-card">
+                    <h2>Karttjänster 🌍</h2>
+                    <div class="search-container">
+                        <input type="text" id="search-input" placeholder="Sök en plats ...">
+                        <button id="search-button" onclick="geocodeSearch()">Sök</button>
+                    </div>
+                    <div class="map-wrapper">
+                        <div id="map-holder"></div>
+                    </div>
+                </div>
+            </div>
         </main>
         <div class="div-clouds-border">
             <div class="div-clouds-border-ani">
@@ -83,6 +98,10 @@
         </footer>
     </div>
     <script src="js/main.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJaGMcmcDiAOIVdwA1kjAc4ycDbWi4pC8&callback=initMapAndGeocode&loading=async"
+        async defer></script>
+    <script src="js/karta.js"></script>
 </body>
 
 </html>

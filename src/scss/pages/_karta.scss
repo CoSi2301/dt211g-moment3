@@ -1,0 +1,72 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.search-container {
+  width: 100%;
+  margin: 2rem auto;
+  display: $flex-display;
+  justify-content: center;
+}
+
+#search-input {
+  width: 70%;
+  padding: 1rem;
+  margin-right: 1rem;
+  box-shadow: hsla(0, 0%, 0%, 0.06) 0px 2px 4px 0px inset;
+  border: 1px solid $white-color;
+  border-radius: 0.5rem;
+}
+
+body.dark-theme #search-input {
+  border: 1px solid hsla(0, 0%, 0%, 0.08);
+}
+
+body.dark-theme #search-input:focus {
+  border-color: $dark-main-background-color;
+  outline: none;
+}
+
+#search-input:focus {
+  border-color: $accent-color;
+  outline: none;
+}
+
+#search-button {
+  padding: 1rem 1.5rem;
+  border: none;
+  box-shadow: hsla(0, 0%, 0%, 0.12) 0px 1px 3px,
+    hsla(0, 0%, 0%, 0.24) 0px 1px 2px;
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
+
+#search-button:hover {
+  background-color: $accent-color;
+  color: $light-primary-color;
+}
+
+#search-button:focus {
+  background-color: $accent-color;
+  color: $light-primary-color;
+  box-shadow: hsla(0, 0%, 0%, 0.05) 0px 0px 0px 1px;
+}
+
+#map-holder {
+  margin-top: 2rem;
+  width: 100%;
+  height: 500px;
+  border-radius: 0.5rem;
+  border: 1px solid $white-color;
+  box-shadow: hsla(0, 0%, 0%, 0.4) 0px 2px 4px,
+    hsla(0, 0%, 0%, 0.3) 0px 7px 13px -3px,
+    hsla(0, 0%, 0%, 0.2) 0px -3px 0px inset;
+}
+
+.sass-card {
+  align-content: center;
+  text-align: center;
+  padding: 2rem 2rem 3rem 2rem;
+  @include respond-to(mobile) {
+    padding: 0.5rem 0.5rem 1rem 0.5rem;
+  }
+}
