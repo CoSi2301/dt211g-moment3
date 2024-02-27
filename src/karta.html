@@ -7,10 +7,11 @@
     <title>Karta - DT211G - Moment 5 - Dynamiska webbplatser</title>
     <script src="https://kit.fontawesome.com/c8569412d3.js" crossorigin="anonymous"></script>
     <script>
-        function initMapAndGeocode() {
-            let geocoder;
-            let map;
+        let geocoder;
+        let map;
+        async function initMapAndGeocode() {
             geocoder = new google.maps.Geocoder();
+            const { Map } = await google.maps.importLibrary("maps");
             let latlng = new google.maps.LatLng(-50.607037624196714, 165.97458631677614);
             const mapID = "bc62d5e70866cb03";
             let mapOptions = {
@@ -113,8 +114,9 @@
         </footer>
     </div>
     <script src="js/main.js"></script>
-    <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJaGMcmcDiAOIVdwA1kjAc4ycDbWi4pC8&callback=initMapAndGeocode"></script>
+    <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJaGMcmcDiAOIVdwA1kjAc4ycDbWi4pC8&loading=async&callback=initMapAndGeocode">
+        </script>
     <script src="js/karta.js"></script>
 </body>
 
