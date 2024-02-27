@@ -9,7 +9,7 @@
     <script>
         let geocoder;
         let map;
-        async function initMapAndGeocode() {
+        async function initMap() {
             geocoder = new google.maps.Geocoder();
             const { Map } = await google.maps.importLibrary("maps");
             let latlng = new google.maps.LatLng(-50.607037624196714, 165.97458631677614);
@@ -115,7 +115,7 @@
     </div>
     <script src="js/main.js"></script>
     <script async
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJaGMcmcDiAOIVdwA1kjAc4ycDbWi4pC8&loading=async&callback=initMapAndGeocode">
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJaGMcmcDiAOIVdwA1kjAc4ycDbWi4pC8&loading=async&callback=initMap">
         </script>
     <script src="js/karta.js"></script>
 </body>
