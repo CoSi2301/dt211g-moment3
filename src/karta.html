@@ -6,7 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Karta - DT211G - Moment 5 - Dynamiska webbplatser</title>
     <script src="https://kit.fontawesome.com/c8569412d3.js" crossorigin="anonymous"></script>
-    <script src="js/karta.js"></script>
+    <script>
+        let geocoder;
+        let map;
+        function initMapAndGeocode() {
+            geocoder = new google.maps.Geocoder();
+            let latlng = new google.maps.LatLng(-50.607037624196714, 165.97458631677614);
+            const mapID = "bc62d5e70866cb03";
+            let mapOptions = {
+                zoom: 13,
+                center: latlng,
+                mapId: mapID,
+            };
+            map = new google.maps.Map(document.getElementById("map-holder"), mapOptions);
+        }
+    </script>
     <link rel="stylesheet" href="scss/main.scss">
 </head>
 
@@ -102,6 +116,7 @@
     <script
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJaGMcmcDiAOIVdwA1kjAc4ycDbWi4pC8&callback=initMapAndGeocode&loading=async"
         async defer></script>
+    <script src="js/karta.js"></script>
 </body>
 
 </html>
