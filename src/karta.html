@@ -6,22 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Karta - DT211G - Moment 5 - Dynamiska webbplatser</title>
     <script src="https://kit.fontawesome.com/c8569412d3.js" crossorigin="anonymous"></script>
-    <script>
-        let map;
-
-
-        async function initMap() {
-            const { Map } = await google.maps.importLibrary("maps");
-
-            map = new Map(document.getElementById("map-holder"), {
-                center: { lat: -34.397, lng: 150.644 },
-                zoom: 8,
-            });
-        }
-
-        initMap();
-    </script>
     <link rel="stylesheet" href="scss/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css">
 </head>
 
 <body>
@@ -66,15 +54,26 @@
                     karttjänst.</li>
                 <li>Platsen ska visuellt visas på kartan med markör för vald plats.</li>
             </ol>
-            <p class="info-text">Jag har valt att lösa uppgiften med Google Maps Javascript API efter inrådan på
-                föreläsningen. Som nämndes så är det ju den vanligaste karttjänsten och med största sannolikhet något
-                man kommer att stöta på i verkliga livet så det är bra att känna på den helt enkelt.</p>
+            <p class="info-text"><span class="not">Jag har valt att lösa uppgiften med Google Maps Javascript API
+                    efter
+                    inrådan på
+                    föreläsningen</span>. Som nämndes så är ju Google maps den vanligaste karttjänsten och med största
+                sannolikhet något
+                man kommer att stöta på i verkliga livet så det är bra att känna på den helt enkelt. Den fungerade fint
+                när jag grejade med localhost men när jag publicerade till netlify så fick jag den inte att fungera
+                längre. Jag har inte lyckats lösa problemet och jag är helt enkelt inte tillräckligt duktig för att lösa
+                det problemet.</p>
+            <p class="info-text">Jag har istället valt att lösa uppgiften med Leaflet och wow, jäklar vad enkelt det var
+                att få fram en karta och att dessutom lägga till en marker. Faktumet att det fungerar så smidigt och har
+                stöd för många andra karttjänster gör hela projektet superintressant. Det ser ut att vara en bra
+                uppsättning med
+                plugins också. Väldigt enkla att lägga till och använda. Klockren dokumentation och tydliga exempel.</p>
             <div class="cards-sass-container">
                 <div class="sass-card">
                     <h2>Karttjänster 🌍</h2>
                     <div class="search-container">
                         <input type="text" id="search-input" placeholder="Sök en plats ...">
-                        <button id="search-button" onclick="geocodeSearch()">Sök</button>
+                        <button id="search-button" onclick="mapSearch()">Sök</button>
                     </div>
                     <div class="map-wrapper">
                         <div id="map-holder"></div>
@@ -113,11 +112,13 @@
         </footer>
     </div>
     <script src="js/main.js"></script>
-    <script async
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJaGMcmcDiAOIVdwA1kjAc4ycDbWi4pC8&loading=async&callback=initMap">
-        </script>
-
-    <!-- <script src="js/karta.js"></script> -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/gh/hosuaby/Leaflet.SmoothMarkerBouncing@v3.0.3/dist/bundle.js"
+        crossorigin="anonymous"></script>
+    <script src="js/karta.js"></script>
 </body>
 
 </html>

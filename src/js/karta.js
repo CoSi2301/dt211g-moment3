@@ -1,23 +1,46 @@
-function geocodeSearch() {
-  let address = document.getElementById("search-input").value;
-  const { AdvancedMarkerElement } = google.maps.importLibrary("marker");
-  geocoder.geocode({ address: address }, function (results, status) {
-    if (status == "OK") {
-      map.setCenter(results[0].geometry.location);
-      let marker = new google.maps.marker.AdvancedMarkerElement({
-        map: map,
-        position: results[0].geometry.location,
-      });
-    } else {
-      alert("Geocode lyckades inte på grund av följande anledning: " + status);
-    }
-  });
+let map = L.map("map-holder").setView(
+  [-50.607037624196714, 165.97458631677614],
+  13
+);
+
+L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+  maxZoom: 19,
+  attribution:
+    '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+}).addTo(map);
+
+let geocoder = L.Control.Geocoder.nominatim();
+
+function mapSearch() {
+  let input = document.getElementById("search-input").value;
+  if (input.length > 0) {
+    geocoder.geocode(input, function (results) {
+      if (results.length > 0) {
+        let result = results[0];
+        // Rensar tidigare markörer
+        map.eachLayer(function (layer) {
+          if (layer instanceof L.Marker) {
+            map.removeLayer(layer);
+          }
+        });
+        let marker = L.marker([result.center.lat, result.center.lng])
+          .addTo(map)
+          .bounce()
+          .on("click", function () {
+            this.toggleBouncing();
+          });
+        map.setView([result.center.lat, result.center.lng], 13);
+      } else {
+        alert("Hittar ingen plats med det namnet, försök igen.");
+      }
+    });
+  }
 }
 
 document
   .getElementById("search-input")
   .addEventListener("keydown", function (event) {
     if (event.key === "Enter" || KeyboardEvent.code === 13) {
-      geocodeSearch();
+      mapSearch();
     }
   });
