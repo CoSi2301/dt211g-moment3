@@ -36,10 +36,14 @@ function mapSearch() {
   }
 }
 
-document
-  .getElementById("search-input")
-  .addEventListener("keydown", function (event) {
-    if (event.key === "Enter" || KeyboardEvent.code === 13) {
-      mapSearch();
-    }
-  });
+document.addEventListener("DOMContentLoaded", (event) => {
+  document.getElementById("search-button").addEventListener("click", mapSearch);
+
+  document
+    .getElementById("search-input")
+    .addEventListener("keydown", function (event) {
+      if (event.key === "Enter" || KeyboardEvent.code === 13) {
+        mapSearch();
+      }
+    });
+});
