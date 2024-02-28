@@ -1,4 +1,4 @@
-let myMap = L.map("map-holder").setView(
+var myMap = L.map("map-holder").setView(
   [-50.607037624196714, 165.97458631677614],
   13
 );
