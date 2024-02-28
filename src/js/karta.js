@@ -10,6 +10,7 @@ L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
 }).addTo(map);
 
 let geocoder = L.Control.Geocoder.nominatim();
+let showMarker;
 
 function mapSearch() {
   let input = document.getElementById("search-input").value;
@@ -17,13 +18,11 @@ function mapSearch() {
     geocoder.geocode(input, function (results) {
       if (results.length > 0) {
         let result = results[0];
-        // Rensar tidigare markörer
-        map.eachLayer(function (layer) {
-          if (layer instanceof L.Marker) {
-            map.removeLayer(layer);
-          }
-        });
-        let marker = L.marker([result.center.lat, result.center.lng])
+
+        if (showMarker) {
+          map.removeLayer(showMarker);
+        }
+        showMarker = L.marker([result.center.lat, result.center.lng])
           .addTo(map)
           .bounce()
           .on("click", function () {
